@@ -1,0 +1,23 @@
+<div class="heading">
+  <a routerLink="" class="logo">
+    <img src="../../../assets/img/logo.jpg" alt="App logo" />
+    <span><h2>{{ title }}</h2><p>Chromepet</p><p><em>Chennai</em></p></span>
+    
+  </a>
+  <div class="header-links">
+  
+      <ng-template #dashboard>
+        <a routerLinkActive="a" routerLink="/dashboard" *ngIf="!agentLoggedIn">Dashboard</a>
+      </ng-template>
+      <a routerLinkActive="a" routerLink="">Home</a>
+      <a routerLinkActive="a" routerLink="/about-us">About-Us</a>
+      <a routerLinkActive="a" routerLink="/pride">Pride</a>
+      <a routerLinkActive="a" routerLink="/news">News</a>
+      <a routerLinkActive="a" routerLink="/gallery">Gallery</a>
+      <a routerLinkActive="a" routerLink="/contact">Contact</a>
+
+      <a routerLinkActive="a" routerLink="/parent-login">Parent-Login</a>
+      <a routerLinkActive="a" routerLink="/staff-login">Staff-Login</a>
+      
+</div>
+
