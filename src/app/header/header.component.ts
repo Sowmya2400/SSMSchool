@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   title="SSM School"
+  public isMenuCollapsed = true;
   constructor() { }
 
   ngOnInit(): void {

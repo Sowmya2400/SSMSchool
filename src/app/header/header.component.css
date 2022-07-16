@@ -1,4 +1,4 @@
-.heading{
+.navbar{
     display: inline-flex;
     box-sizing: border-box;
     height: fit-content;
@@ -7,10 +7,11 @@
     align-items: center;
     box-shadow: 0 0px 50px lightgray;
 }
+
 .logo{
     display: inline-flex;
     align-items: center;
-    color: #54090c;
+    color: #1b064d;
     text-decoration: none;
 }
 .logo p{
@@ -21,19 +22,19 @@
     zoom: 150%;
     margin-right: 15px;
 }
-.header-links{
+.collapse{
     width: fit-content;
     margin-left: auto;
     margin-right: 0;
 
 }
-.header-links a,button{
+.collapse a{
     font-size: large;
     color: black;
     text-decoration: none;
     margin: 10px;
 }
-.header-links>a:hover{
+.collapse a:hover{
     border-bottom: 1px solid dodgerblue;
 }
 

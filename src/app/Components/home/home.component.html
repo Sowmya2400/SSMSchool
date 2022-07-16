@@ -1,1 +1,139 @@
 <app-header></app-header>
+<ngb-carousel *ngIf="images" class="carousel">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[0]" alt="Random first slide">
+      </div>
+      
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[1]" alt="Random second slide">
+      </div>
+      
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[2]" alt="Random third slide">
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  <div class="news">
+  <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseleave="this.start();">
+    <span class="news-title">NEWS!!!!!&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span>
+    <span>&#9733;Admissions open for 2022-23 for Classes I-VI&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    &#160;</span>                         
+    <span>&#9733;Last day for Fees Payment Term-IV is 20-07-22</span>
+</marquee>
+</div>
+
+
+<div class="welcome">
+  <h2 class="wel-heading heading"><b>Welcome to SSM! </b></h2>
+  <h4 class="tagline">Where Excellence meets with Experience</h4>
+  <div class="para">
+    <p>
+      SSM, in its 36 glorious years of existence, has grown to provide a learning environment that 
+      facilitates the broadening of the intellect and grooming of the personality. The school was 
+      inaugurated on 11 June 1986. It is a co-educational school, with classes from preschool to 12th,
+      and is affiliated to the Central Board of Secondary Education, New Delhi. Montessori system of 
+      education is followed for the children in the age group of 2 ½ to 7 ½ years (Pre-KG to class II 
+      level). The children then continue in the regular stream of education.</p>
+      <p>“A good teacher can awaken joy in their students and leave a positive impression that lasts a 
+      lifetime.” In Sunshine SSM we have highly qualified, trained and experienced faculties who are 
+      capable in bringing out the uniqueness in each child.</p>
+      <p>The school is managed by SSM Educational Trust, a public charitable non-profitable trust, 
+      established in 1990 with an object of establishing, maintaining, managing and developing 
+      educational institutions for providing quality education to the students. SSM is motivated by 
+      passion to be a leader in education.
+    </p>
+  </div>
+</div>
+
+<div class="infrastructure">
+  <h2 class="infra-heading heading"><b>Facilities</b></h2>
+  <div class="box">
+    <div class="boxes box1">
+      <img src="assets/img/home-lunch.png"/>
+      <h4 class="box-title">LUNCH</h4>
+      <p class="box-para">In order to inculcate healthy eating habits and to 
+        develop social skills during mealtime we, at SSM provide nutritious meal for our students.</p>
+    </div>
+    <div class="boxes box2">
+      <img src="assets/img/home-trip.jpg"/>
+      <h4 class="box-title">TRIPS AND TOURS</h4>
+      <p class="box-para">SSM arranges an Educational Tour (from classes 6th to 12th) and Field Trips
+        (from classes 3rd to 12th) to explore the beautiful world in an educational way.
+      </p>
+    </div>
+    <div class="boxes box3">
+      <img src="assets/img/home-lab.jpg"/>
+      <h4 class="box-title">LABORATORY</h4>
+      <p class="box-para"> The Science and Maths Labs available in SSM are of International Standard
+        with trained Lab Assisstants which teaches students in the most practical way.
+      </p>
+    </div>
+    <div class="boxes box4">
+      <img src="assets/img/home-co.png"/>
+      <h4 class="box-title">CO-CURRICULAR ACTIVITIES</h4>
+      <p class="box-para">Students are provided with Swimming, Sports and Fine Arts Classes, which 
+        includes Arts & Craft, Karate, Photography, Violin & many more..
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="management">
+  <h2 class="heading"><b>Our Management</b></h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="assets/img/founder.jpg" alt="Founder">
+        <div class="container">
+          <h2>Mr.G.Parthasarathy</h2>
+          <p class="title">Founder</p>
+          <p>The future is mysterious and thus one is not aware of what 
+            the evolution of time has kept in every child.In SSM,we kindle the best 
+            out of the one.
+          </p>
+          <p>parthasarathy@ssmetrust.com</p>
+          <p><button class="button" (click)="home()">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="assets/img/correspondent.jpg" alt="Correspondent">
+        <div class="container">
+          <h2>Mr.K.Santhanam</h2>
+          <p class="title">Correspondent</p>
+          <p>SSM is an institution engaged in creating a reflective medium for 
+            children to explore, experiment, and self-actualize.</p>
+          <p>santhanam@ssmetrust.com</p>
+          <p><button class="button" (click)="home()">Contact</button></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card card3">
+        <img src="assets/img/principal.jpg" alt="Principal">
+        <div class="container">
+          <h2>Mrs.P.Vijayalaksmi</h2>
+          <p class="title">Principal</p>
+          <p>“Excellence is never an accident;it is the result of high intention, sincere effort, 
+            intelligent direction and the vision to see obstacles as opportunities”.
+          </p>
+          <p>vijayalaksmi@ssmetrust.com</p>
+          <p><button class="button" (click)="home()">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<app-footer></app-footer>
+
+

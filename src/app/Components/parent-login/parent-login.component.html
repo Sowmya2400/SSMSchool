@@ -1,0 +1,27 @@
+<app-header></app-header>
+<div class="content">
+    <form class="form">
+        <p>Enter your credentials</p>
+        <div #admnNoElement>
+            <label for="admnNo">Admn No:</label>
+            <p class="input-error"></p>
+            <input type="number" name="admnNo" id="admnNo" [(ngModel)]="admnNo"
+             (blur)="admnNoCheck(admnNoElement)" (input)="admnNoCheck(admnNoElement)">
+        </div>
+        <div #dobElement>
+            <label for="dob">DOB: </label>
+            <p class="input-error"></p>
+            <input type="date" name="dob" id="dob" [(ngModel)]="dob"
+             (blur)="dobCheck(dobElement)" (input)="dobCheck(dobElement)">
+        </div>
+        <div #showErrorElement>
+            <p class="show-error"> </p>
+        </div>
+        <div class="submit-button" #submitButtonElement>
+            <button type="submit" class="button"
+            (click)="onSubmit(submitButtonElement)">Login</button>
+        </div>
+    </form>
+</div>
+
+

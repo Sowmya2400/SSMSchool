@@ -1,0 +1,72 @@
+<app-header></app-header>
+
+<div class="title">
+    <h3 id="tit">Student Details</h3>
+    <button id="log" (click)="logout()"><b><u>Log Out</u></b></button>
+</div>
+
+<div #selectExamElement>
+    <p class="select">Select an Exam:</p>
+</div>
+<div class="buttons">
+    <button class="button" (click)="viewResults('MidTerm1')">Mid-Term I </button>
+    <button class="button" (click)="viewResults('Term1')">Term I </button>
+    <button class="button" (click)="viewResults('MidTerm2')">Mid-Term II </button>
+    <button class="button" (click)="viewResults('Term2')">Term II </button>
+</div>
+ 
+<div class="stuDetails">
+    <div >AdmnNo: {{admnNo}}</div>
+    <div >Name: {{sname}}</div>
+    <div>Class: {{std}}-{{sec}}</div>
+    <div *ngIf="showTable">Exam: {{exam}}</div>
+</div>
+<div #showErrorElement>
+    <marquee behavior="scroll" direction="left" style="color: red;">
+    <p class="show-error"> </p>
+</marquee>
+</div>
+<div class="tablediv">
+    <table class="table" *ngIf="showTable">
+        <thead>
+        <tr>
+            <th>Subject</th>
+            <th>Mark</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{sub1}}</td>
+            <td>{{mark1}}</td>
+        </tr>
+        <tr>
+            <td>{{sub2}}</td>
+            <td>{{mark2}}</td>
+        </tr>
+        <tr>
+            <td>{{sub3}}</td>
+            <td>{{mark3}}</td>
+        </tr>
+        <tr>
+            <td>{{sub4}}</td>
+            <td>{{mark4}}</td>
+        </tr>
+        <tr>
+            <td>{{sub5}}</td>
+            <td>{{mark5}}</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr colspan="1">
+            <th id="total">Total :</th>
+            <th>{{total}} / 500</th>
+        </tr>
+        <tr>
+            <th id="rank" colspan="1">Rank :</th>
+            <th>{{rank}} / {{strength}}</th>
+        </tr>
+    </tfoot>
+    </table>
+</div>
+
+

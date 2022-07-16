@@ -1,0 +1,37 @@
+h1{
+    color: #1b064d;
+    margin:2%
+}
+.accordion{
+    width:65%;
+    min-width:500px;
+    margin: auto;
+    padding-bottom: 4%;
+}
+#subject{
+    display: inline-block;
+    width: 70%;
+    height: 50px;
+}
+#download{
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+        height: 50px;
+        line-height: 50px;
+}
+.btn {
+    background-color: rgb(153, 40, 46);
+    border: none;
+    color: white;
+    padding:  5px 30px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top:5px;
+  }
+  .btn:hover {
+    background-color: rgb(68, 6, 6);
+  }
+  span{
+      font-size: 120%;
+  }

@@ -1,0 +1,22 @@
+h1{
+    color: #1b064d;
+    margin:2%
+}
+.accordion{
+    width:65%;
+    min-width:500px;
+    margin: auto;
+    padding-bottom: 4%;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    box-shadow: 0 25px 25px lightgray;
+}
+.titles{
+    background-color: #54090c;
+    color: #54090c  ;
+}

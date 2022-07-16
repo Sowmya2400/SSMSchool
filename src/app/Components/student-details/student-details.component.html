@@ -1,0 +1,43 @@
+<app-header></app-header>
+
+<div class="title">
+    <h3 id="tit">Student Details</h3>
+    <button id="log" (click)="logout()"><b><u>Log Out</u></b></button>
+</div>
+<div class="container">
+<div class="details">
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Name</th> <td><b>:</b></td> <td>{{sname}}</td>
+            </tr>
+            <tr>
+                <th>AdmnNo</th> <td><b>:</b></td> <td>{{admnNo}}</td>
+            </tr>
+            <tr>
+                <th>Class</th> <td><b>:</b></td> <td>{{std}} - {{sec}}</td>
+            </tr>
+            <tr>
+                <th>DOB</th> <td><b>:</b></td> <td>{{dob}}</td>
+            </tr>
+            <tr>
+                <th>Email Id</th> <td><b>:</b></td> <td>{{emailId}}</td>
+            </tr>
+            <tr>
+                <th>Blood Group</th> <td><b>:</b></td> <td>{{blood}}</td>
+            </tr>
+            <tr>
+                <th>Address</th> <td><b>:</b></td> <td>{{address}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="right">
+    <img src="assets/profile/{{img}}">
+
+    <div class="buttons">
+        <button class="button" (click)="viewMarks()">View Marks</button>
+        <button class="button" (click)="pay()">Pay Fees</button>
+    </div>
+</div>
+</div>

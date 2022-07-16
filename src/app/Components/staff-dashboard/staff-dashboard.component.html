@@ -1,0 +1,56 @@
+<app-header></app-header>
+
+<div class="title">
+    <h3 id="tit">Staff Profile</h3>
+    <button id="log" (click)="logout()"><b><u>Log Out</u></b></button>
+</div>
+<div #selectClassElement>
+    <p class="select">Select a Class:</p>
+</div>
+<div class="buttons">
+    <div class="button but" (click)="classClicked(1)">{{std1}} - {{sec1}} {{sub1}}</div>
+    <div class="button but" (click)="classClicked(2)">{{std2}} - {{sec2}} {{sub2}}</div>
+    <div class="button but" (click)="classClicked(3)">{{std3}} - {{sec3}} {{sub3}}</div>
+</div>
+
+
+<div #selectExamElement *ngIf="showExam">
+    <p class="select">Select an Exam:</p>
+</div>
+<div class="buttons" *ngIf="showExam">
+    <div class="button but" (click)="examClicked(1)">Mid-Term I</div>
+    <div class="button but" (click)="examClicked(2)">Term I</div>
+    <div class="button but" (click)="examClicked(3)">Mid-Term II</div>
+    <div class="button but" (click)="examClicked(4)">Term II</div>
+</div>
+
+<div class="tableDetails" *ngIf="showTable">
+    <div>Class: {{std}}-{{sec}}</div>
+    <div>Subject: {{sub}}</div>
+    <div>Exam: {{exam}}</div>
+</div>
+
+<div class="tablediv" *ngIf="showTable">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Admn No</th>
+            <th>Name</th>
+            <th>Marks</th>
+            <th>Submit</th>
+        </tr>
+    </thead>
+        <tbody>
+            <tr *ngFor="let i of it">
+                <td>{{students[i].admnNo}}</td>
+                <td>{{students[i].name}}</td>
+                <td><input type="number" id="mark" name="mark" [(ngModel)]="mark[i]"/></td>
+                <td><button class="button" (click)="upload(students[i].admnNo,mark[i],i)">{{uploadB[i]}}</button>
+                    <div #remarksElement>
+                        <p class="remarks"> </p>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

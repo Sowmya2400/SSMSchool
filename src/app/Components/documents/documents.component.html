@@ -1,0 +1,17 @@
+<app-header></app-header>
+<h1><b>Documents</b></h1>
+<body>
+<table class="table table-striped tbl">
+  <tbody>
+  <tr *ngFor="let i of iterator">
+    <td>
+      <ngb-highlight [result]="doc_titles[i]" ></ngb-highlight>
+    </td>
+    <td class="bn"><a href="assets/documents/{{doc_titles[i]}}.pdf" download="{{doc_titles[i]}}.pdf">
+      <span>&#10515;    </span>Download</a></td>
+  </tr>
+  </tbody>
+</table>
+</body>
+
+<app-footer></app-footer>

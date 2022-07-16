@@ -1,0 +1,135 @@
+
+img{
+    height: 450px;
+    width: 100%;
+}
+.news{
+    background-color: red;
+}
+.news-title{
+    color: yellow;
+    font-size: large;
+}
+.carousel-caption{
+    font-size: 60px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+.carousel-caption>h3{
+  color: #000;
+}
+
+
+.welcome{
+  margin: 2%;
+}
+.tagline{
+  color: gold;
+  font-style: italic;
+}
+.heading,.tagline{
+  text-align: center;
+}
+.para{
+  width: 90%;
+  margin: 3%;
+  line-height: 1.9;
+}
+
+.infrastructure{
+  margin: 3%;
+}
+.infra-heading{
+  text-align: center;
+}
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+
+.box :first-child {
+    align-self: center;
+}
+.box1,.box4{
+  background-color: aquamarine;
+}
+.box2,.box3{
+  background-color: aqua;
+}
+.box-title,.box-para{
+  text-align: center;
+}
+.boxes img{
+  height: 70px;
+  width: 70px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.management{
+    box-sizing: border-box;
+    width: 72%;
+    margin: auto;
+}
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  .card img{
+    height: 90px;
+    width: 70px;
+    margin: auto;
+    margin-top: 3%;
+  }
+  .card3 img{
+    border-radius: 50%;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 100%;
+  }
+  .column:hover{
+    background-color: black;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }

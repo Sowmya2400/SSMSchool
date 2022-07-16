@@ -1,0 +1,38 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<app-header></app-header>
+<div class="content">
+    <form class="form">
+        <p>Enter your credentials</p>
+        <div #staffIdElement>
+            <label for="staffId">Staff Id:</label>
+            <p class="input-error"></p>
+            <input type="number" name="staffId" id="staffId" [(ngModel)]="staffId"
+             (blur)="staffIdCheck(staffIdElement)" (input)="staffIdCheck(staffIdElement)">
+        </div>
+        <div #pwdElement>
+            <label for="pwd">Password: </label>
+            <p class="input-error"></p>
+            <input [type]="fieldTextType ? 'text' : 'password'" name="pwd" id="pwd" [(ngModel)]="pwd"
+             (blur)="pwdCheck(pwdElement)" (input)="pwdCheck(pwdElement)">
+             <span class="input-group-text">
+                <i class="fa"
+                [ngClass]="{
+                'fa-eye-slash': !fieldTextType,
+                'fa-eye': fieldTextType
+                }"
+                (click)="toggleFieldTextType()">
+                </i>
+            </span>
+        </div>
+        <div #showErrorElement>
+            <p class="show-error"> </p>
+        </div>
+        <div class="submit-button" #submitButtonElement>
+            <button type="submit" class="button"
+            (click)="onSubmit(submitButtonElement)">Login</button>
+        </div>
+    </form>
+</div>
+

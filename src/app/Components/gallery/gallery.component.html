@@ -1,1 +1,45 @@
-<p>gallery works!</p>
+<app-header></app-header>
+
+
+  <h1><b>Explore our Campus!</b></h1>
+  <div class="d-flex">
+    <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-pills" orientation="vertical">
+      <li ngbNavItem="campus">
+        <a ngbNavLink (click)="loadImages(1)">Campus</a>
+        <ng-template ngbNavContent>
+          <img *ngFor="let img of imgList" src="{{img}}" alt="infraPics"/>
+      </ng-template>
+      </li>
+      <li ngbNavItem="labs">
+        <a ngbNavLink (click)="loadImages(2)">Labs</a>
+        <ng-template ngbNavContent>
+          <img *ngFor="let img of imgList" src="{{img}}" alt="infraPics"/>
+      </ng-template>
+      </li>
+      <li ngbNavItem="infrastructure">
+        <a ngbNavLink (click)="loadImages(3)">Infrastructure</a>
+        <ng-template ngbNavContent>
+            <img *ngFor="let img of imgList" src="{{img}}" alt="infraPics"/>
+        </ng-template>
+      </li>
+      <li ngbNavItem="tours">
+        <a ngbNavLink (click)="loadImages(4)">Tours</a>
+        <ng-template ngbNavContent>
+          <img *ngFor="let img of imgList" src="{{img}}" alt="infraPics"/>
+        </ng-template>
+      </li>
+      <li ngbNavItem="celebrations">
+        <a ngbNavLink (click)="loadImages(5)">Celebrations</a>
+        <ng-template ngbNavContent>
+          <img *ngFor="let img of imgList" src="{{img}}" alt="infraPics"/>
+        </ng-template>
+      </li>
+    </ul>
+  
+    <div [ngbNavOutlet]="nav" class="ms-4"></div>
+  </div>
+  
+
+
+
+<app-footer></app-footer>

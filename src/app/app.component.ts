@@ -8,6 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ssmschool';
 
-  lat=12.956669638116713;
-  lng=80.133794851;
+ 
 }

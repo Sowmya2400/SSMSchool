@@ -1,0 +1,19 @@
+<app-header></app-header>
+<h1><b>Circulars</b></h1>
+<div class="accordion">
+<ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0" >
+    <ngb-panel *ngFor="let i of iterator"
+        title="{{datesList[i]}}       {{categoryList[i]}}">
+      <ng-template ngbPanelContent class="content">
+        <section id="subject">
+            {{subjectList[i]}}
+        </section>
+        <section id="download">
+          <a class="btn" href="assets/circular/{{filesList[i]}}" download="{{filesList[i]}}">
+            <span>&#10515;    </span>      Download</a></section>
+      </ng-template>
+    </ngb-panel>
+    
+  </ngb-accordion>
+</div>
+  <app-footer></app-footer>

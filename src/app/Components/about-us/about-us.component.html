@@ -1,9 +1,9 @@
 <app-header></app-header>
-<h1>Welcome to SSM School, Chromepet</h1>
+<h1><b>Welcome to SSM School, Chromepet!</b></h1>
 
 <body>
-
-<img src="../../../assets/img/about-us-1.jpg" alt="about-us-1" height="300px" width="300px" />
+<div class="block b1">
+<img src="../../../assets/img/about-us-1.jpg" alt="about-us-1"  />
 
 <p>We, at SSM School, offer a 360-degree learning 
     environment to its students and are rated as one of the best schools in Chennai.
@@ -12,27 +12,19 @@
     Further,our school follows the best and top teaching methodologies. 
     
 </p>
+</div>
 
 
-
+<div class="block b2">
 <p>It is these set of international standards followed at SSM School
     that makes it amongst the Top CBSE Schools in Chennai.These methods offer 
     the best possible foundation and assistance that help students 
     perform exceptionally well in Olympiad and other competitive exams.
 </p>
 <img src="../../../assets/img/about-us-2.jpg" alt="about-us-2" height="300px" width="300px" />
+</div>
 
-
-
-<img src="../../../assets/img/about-us-3.jpg" alt="about-us-3" height="300px" width="300px"/>
-
-<p>
-    At SSM, for the past 32 years, we have created a unique blend of world-class curricula, contemporary 
-    teaching methodologies, and equal focus on intellectual, physical and personality development, 
-    resulting future leaders who are ready to take on the world. Today, we stand as the force behind
-    creating countless world-class doctors, engineers, IAS officers, chartered accountants,
-    and so much more.
-</p>
+<div class="block b3">
 <p>
     The taste of the healthy food provided by our school, makes the students forget the taste of
     the junk foods. The Educational tours and Field Trips will proivde the students with a small break 
@@ -40,5 +32,25 @@
 </p>
 
 <img src="../../../assets/img/about-us-4.jpg" alt="about-us-4" height="300px" width="300px"/>
+</div>
 
+<div class="block b4">
+    <img src="../../../assets/img/about-us-3.jpg" alt="about-us-3" height="300px" width="300px"/>
+    
+    <p>
+        At SSM, for the past 32 years, we have created a unique blend of world-class curricula, contemporary 
+        teaching methodologies, and equal focus on intellectual, physical and personality development, 
+        resulting future leaders who are ready to take on the world. Today, we stand as the force behind
+        creating countless world-class doctors, engineers, IAS officers, chartered accountants,
+        and so much more.
+    </p>
+    </div>
+    
 </body>
+
+<agm-map [latitude]="lat" [longitude]="lng">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+</agm-map>
+
+
+<app-footer></app-footer>
